@@ -1,9 +1,16 @@
 import React from 'react'
 
-function blog() {
+function Blog() {
+  const divStyle = {
+    padding: "20px",
+    backgroundColor: "#f0f0f0",
+    textAlign: "center",
+    borderRadius: "8px",
+  }
+
   return (
-    <div>hello page blog</div>
+    <div style={divStyle}>Hello page blog</div>
   )
 }
 
-export default blog
+export default Blog

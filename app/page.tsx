@@ -1,23 +1,19 @@
 import Link from "next/link";
-import users from "./users"
+import styles from "./Navbar.module.css";
 
 export default function Home() {
   return (
-  
-    <div className="container">
-      
-      <nav>
-        <ul>
-          <li>
-            <Link href="/contact">Contact</Link>
+    <div className={styles.container}>
+      <nav className={styles.navbar}>
+        <ul className={styles.navList}>
+          <li className={styles.navItem}>
+            <Link href="/contact" className={styles.navLink}>Contact</Link>
           </li>
-          <li>
-            <Link href="/blog">Blog</Link>
+          <li className={styles.navItem}>
+            <Link href="/blog" className={styles.navLink}>Blog</Link>
           </li>
         </ul>
       </nav>
-      <h1>Si Hazem</h1>
-      
     </div>
   );
 }

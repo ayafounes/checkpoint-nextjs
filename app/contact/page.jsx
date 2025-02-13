@@ -1,9 +1,16 @@
 import React from 'react'
 
-function contact() {
+function Contact() {
+  const divStyle = {
+    padding: "20px",
+    backgroundColor: "#f0f0f0",
+    textAlign: "center",
+    borderRadius: "8px",
+  }
+
   return (
-    <div>hello page contact</div>
+    <div style={divStyle}>Hello page contact</div>
   )
 }
 
-export default contact
+export default Contact
